@@ -1,0 +1,175 @@
+body{background-color:white;}
+body *{margin:auto;}
+
+.widget_box{
+	width:300px;
+	background-color:white;
+	margin-top:5px;
+	border-radius:5px;
+	border-style:solid;
+	border-width:2px;
+	border-color:#ededed;
+
+}
+
+.widget_text{
+	padding:10px;
+	color: black;
+	font-family: 'Roboto', sans-serif;
+	margin:0px;
+	font-weight:600;
+	font-size:16px;
+}
+
+h1{
+	font-family: 'Roboto', sans-serif; 
+	margin-bottom:0px;
+	padding-bottom:0px; 
+	display:inline-block;
+	margin-top:0px;
+}
+
+.optional_text{
+	display:inline-block;
+	margin-bottom:0px;
+	font-family: 'Roboto', sans-serif;
+}
+
+#circle{
+	width:40px;
+	height: 40px;
+	padding:10px;
+}
+
+#no_activity_selected:hover{
+	background-color:#ededed;
+}
+
+#activity_selected{
+	height: 60px;
+}
+
+#activity_selected:hover{
+	background-color:#ededed;
+}
+
+#activity_selected_text_container{
+	float:right;
+	height:60px;
+	width:240px;
+	text-transform:capitalize;
+
+}
+
+#activity_selected p{
+	padding-top:20px;
+	text-align:left;
+	
+
+}
+
+#existing_activities{
+	    overflow: auto;
+}
+
+.activity{
+	width:100px;
+	float:left;
+	position:relative;
+	padding-top:12px;
+	padding-bottom:12px;
+
+}
+
+.activity:hover{
+	background-color:#ededed;
+}
+
+.activity img{
+	display:block;
+	margin:auto;
+}
+
+.activity p{
+	color: black;
+	font-family: 'Roboto', sans-serif;
+	padding-top:10px;
+	font-weight:600;
+	font-size:16px;
+	text-align:center;
+}
+
+#add_activity_button{
+	height:60px;
+}
+
+#add_activity_button:hover{
+	background-color:#ededed;
+}
+
+#add_activity_button_text_container{
+	float:right;
+	height:60px;
+	width:240px;
+	padding-top:10px;
+}
+
+#add_activity #text_box{
+	background-color:white;
+	height:25px;
+	width:280px;
+	font-family: 'Roboto', sans-serif;
+	font-colour:black;
+	margin-left:8px;
+	padding:10px;
+	font-size:16px;
+	font-weight:600;
+	border-style:solid;
+	border-width:2px;
+	border-radius:50px;
+	margin-bottom:5px;
+}
+
+#choose_icon{
+	overflow: auto;
+}
+
+.icon{
+	width:75px;
+	float:left;
+	position:relative;
+	padding-top:12px;
+	padding-bottom:12px;
+}
+
+
+.icon:hover{
+	background-color:#ededed;
+}
+
+.icon_selected{
+	background-color:#ededed;
+}
+
+.icon img{
+	display:block;
+	margin:auto;
+}
+
+#add_activity .submit_button{
+	width: 280px;
+	border-style:solid;
+	border-width:2px;
+	border-radius:50px;
+	margin-top:10px;
+	margin-bottom:10px;
+	font-family: 'Roboto', sans-serif;
+	font-size:16px;
+	font-weight:600;
+	text-align:center;
+	height:30px;
+	padding-top:10px;
+}
+
+#add_activity .submit_button:hover{
+	background-color:#ededed;

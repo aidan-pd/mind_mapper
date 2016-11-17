@@ -1,4 +1,6 @@
 <?php
+session_start();
+$logged_in_username = $_SESSION["username"];
 
 $servername = "localhost";
 $db_username = "root";
@@ -22,7 +24,7 @@ if (!$conn) {
 
 // Insert activity into table
 $sql = "INSERT INTO activities (username, activity, icon)
-		VALUES ('$username', '$activity', '$icon')";
+		VALUES ('$logged_in_username', '$activity', '$icon')";
 if (mysqli_query($conn, $sql)) {
     echo "Inserted activity into table succesfully";
 } else {

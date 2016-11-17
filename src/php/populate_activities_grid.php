@@ -1,5 +1,17 @@
 <?php
 
+session_start();
+
+if ($_SESSION["logged_in"] = 0){
+	header( 'Location: http://localhost/mind_mapper/src/home_page.php' ) ;
+}
+else{
+	$logged_in_username = $_SESSION["username"];
+}
+
+?>
+<?php
+
 //function populateActivitiesGrid() {
 
 	$servername = "localhost";
@@ -15,7 +27,7 @@
 	}
 
 	//select activities
-	$sql = "SELECT activity, icon FROM activities WHERE username = 'system'";
+	$sql = "SELECT activity, icon FROM activities WHERE username = 'system' OR username = '$logged_in_username'";
 	if ($results = mysqli_query($conn, $sql)) {
 
 		while($result = mysqli_fetch_assoc($results)){

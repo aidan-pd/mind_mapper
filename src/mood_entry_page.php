@@ -1,5 +1,22 @@
+<?php
+
+session_start();
+$_SESSION["logged_in"] = 1;
+$logged_in_username = "";
+if ($_SESSION["logged_in"] == 0){
+	header( 'Location: http://localhost/mind_mapper/src/home_page.php' ) ;
+}
+else{
+	$logged_in_username = $_SESSION["username"];
+	echo "<p>$logged_in_username</p>";
+}
+
+?>
 <!DOCTYPE>
 <html>
+<head>
+<meta name="viewport" content="width=device-width">
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="javascript/activity_widget.js"></script>
 <?php
@@ -11,6 +28,9 @@
 <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 
 <body>
+
+
+
 <h1>Activity</h1>
 <p class="optional_text">(Optional)</p>
 <div class="widget_box" id="activity_widget_box">

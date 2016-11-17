@@ -1,8 +1,8 @@
-body{background-color:white;}
-body *{margin:auto;}
+body{background-color:white; }
+body *{margin:auto; }
 
 .widget_box{
-	width:300px;
+	width:100%;
 	background-color:white;
 	margin-top:5px;
 	border-radius:5px;
@@ -73,7 +73,7 @@ h1{
 }
 
 .activity{
-	width:100px;
+	width:33%;
 	float:left;
 	position:relative;
 	padding-top:12px;

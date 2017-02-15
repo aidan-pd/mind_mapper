@@ -35,7 +35,7 @@ if (mysqli_query($conn, $sql)) {
     echo "Inserted account into table succesfully";
 
 	$_SESSION["logged_in"] = "TRUE";
-	$_SESSION["username"] = $submitted_username;
+	$_SESSION["username"] = $username;
 
 	header( "Location: ../welcome_page.php" );	
 

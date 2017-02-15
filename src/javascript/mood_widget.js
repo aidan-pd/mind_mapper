@@ -1,7 +1,5 @@
-$(document).ready(function(){
-
-
-	var selected_mood = "none";
+$(window).bind("load", function() {
+   	var selected_mood = "none";
 	var selected_mood_intensity = 0;
 
 	set_grid_size();
@@ -16,6 +14,12 @@ $(document).ready(function(){
     $(document).on('click', '.grid_square', function() { 
         select_mood(this);
     });
+});
+
+$(document).ready(function(){
+
+
+
 
  });
 

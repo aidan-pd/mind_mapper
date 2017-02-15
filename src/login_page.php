@@ -31,6 +31,10 @@
 	</head>
 	<body>
 		 <p id="titleText">QS <br> MoodLogger</p>
+
+		 <p id="subText">Log In Below</p>
+
+
 		 <form action="php/login.php" method="post">
 			<input type="text" name="username" placeholder="Username"><br>
   			<input type="password" name="password" placeholder="Password"><br>

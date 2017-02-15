@@ -1,7 +1,7 @@
 <?php
 $servername = "dbhost.cs.man.ac.uk";
 $username = "mbax4ad8";
-$password = "ShitPassword64!";
+$password = "zxcvbnm64";
 $dbname = "mbax4ad8";
 
 // Create connection

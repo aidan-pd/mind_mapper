@@ -37,6 +37,7 @@
   		</br>
   			<input type="submit" value="Log In" class="button">
 		</form>
+	</br>
 		<a class="button" href="new_account.html">I haven't got an account...</a>
 	</body>
 

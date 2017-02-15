@@ -83,7 +83,7 @@ if (mysqli_query($conn, $sql)) {
 $sql = "CREATE TABLE phone_numbers(
     id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
     phone VARCHAR(30) NOT NULL, 
-    study_week INT(1) NOT NULL,
+    study_week INT(1) NOT NULL
     )";
 if (mysqli_query($conn, $sql)) {
     echo "phone number table created successfully";

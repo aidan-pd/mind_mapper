@@ -4,6 +4,8 @@
 <html>
 	<head>
 		<link rel="stylesheet" type="text/css" href="css/welcome_page.css">
+		<link rel="stylesheet" type="text/css" href="css/login_page.css">
+
 		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 
@@ -30,10 +32,8 @@
 	<body>
 		 <p id="titleText">QS <br> MoodLogger</p>
 		 <form action="php/login.php" method="post">
-			Username:<br>
-			<input type="text" name="username"><br>
-			Password:<br>
-  			<input type="text" name="password"><br>
+			<input type="text" name="username" placeholder="Username"><br>
+  			<input type="password" name="password" placeholder="Password"><br>
   			<input type="submit" value="Submit" class="button">
 		</form>
 		<p class="button">Create a New Account</p>

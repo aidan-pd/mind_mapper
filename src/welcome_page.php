@@ -13,6 +13,8 @@ else{
 		<link rel="stylesheet" type="text/css" href="css/welcome_page.css">
 		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+
+		<title>QS Mood Logger</title>
 		<link rel="apple-touch-icon" sizes="57x57" href="icons/apple-icon-57x57.png">
 		<link rel="apple-touch-icon" sizes="60x60" href="icons/apple-icon-60x60.png">
 		<link rel="apple-touch-icon" sizes="72x72" href="icons/apple-icon-72x72.png">
@@ -30,6 +32,7 @@ else{
 		<meta name="msapplication-TileColor" content="#ffffff">
 		<meta name="msapplication-TileImage" content="icons/ms-icon-144x144.png">
 		<meta name="theme-color" content="#ffffff">
+		
 	</head>
 	<body>
 		 <p id="titleText">QS <br> MoodLogger</p>

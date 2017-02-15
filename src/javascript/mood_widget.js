@@ -1,8 +1,5 @@
 $(document).ready(function(){
 
-$(window).load(function() {
-	
-});
 
 	var selected_mood = "none";
 	var selected_mood_intensity = 0;

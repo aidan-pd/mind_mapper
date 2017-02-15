@@ -46,6 +46,7 @@ $dbname = "mbax4ad8";
 	}
 
 
+mysqli_close($conn);
 
 //}
 

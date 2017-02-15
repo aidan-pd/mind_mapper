@@ -36,6 +36,8 @@ $dbname = "mbax4ad8";
 					if (password_verify(
 					    base64_encode(hash('sha256', $_POST['password'], true)
 					    ),$result['password'])) {
+						mysqli_close($conn);
+
 					    header( "Location: ../welcome_page.php" );	
 						$_SESSION["logged_in"] = "TRUE";
 						$_SESSION["username"] = $submitted_username;
@@ -68,6 +70,7 @@ $dbname = "mbax4ad8";
 			    echo "Error selecting user: " . mysqli_error($conn);
 			}
 
-		
+		mysqli_close($conn);
+
 
 ?>

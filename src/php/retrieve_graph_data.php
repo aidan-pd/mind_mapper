@@ -49,6 +49,7 @@ $dbname = "mbax4ad8";
 	    echo "Error selecting activity: " . mysqli_error($conn);
 	}
 
+mysqli_close($conn);
 
 
 //}

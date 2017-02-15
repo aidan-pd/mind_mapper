@@ -18,14 +18,33 @@ if (!$conn) {
     die("Connection failed: " . mysqli_connect_error());
 }
 
-// Insert mood entry into table
-$sql = "UPDATE users SET phone_number = $phone_number WHERE username='$logged_in_username'";
-		
+$sql = "SELECT study_week FROM users WHERE username = '$logged_in_username'";
+
 if (mysqli_query($conn, $sql)) {
-    echo "Inserted phone number into table succesfully";
+    echo "Got study week successfully";
+
+
+	if ($results = mysqli_query($conn, $sql)) {
+		$result = mysqli_fetch_assoc($results)
+		$study_week = $result['study_week'];
+
+	    $sql = "INSERT INTO phone_numbers (phone, study_week) VALUES ('$phone_number', '$study_week')";
+		if (mysqli_query($conn, $sql)) {
+		    echo "Added phone number";
+
+		} else {
+		    echo "Error adding phone number: " . mysqli_error($conn);
+		}
+
+
+	}//if
+
+
+
 } else {
-    echo "Error inserting phone number into table: " . mysqli_error($conn);
+    echo "Error getting study week: " . mysqli_error($conn);
 }
+
 
 mysqli_close($conn);
 

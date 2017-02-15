@@ -69,12 +69,26 @@ $sql = "CREATE TABLE activities(
 	id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
 	username VARCHAR(30) REFERENCES users(username), 
 	activity VARCHAR(30) NOT NULL,
-	icon VARCHAR(30) NOT NULL
+	icon VARCHAR(30) NOT NULL,
+    time_stamp TIMESTAMP
 	)";
 if (mysqli_query($conn, $sql)) {
     echo "activities table created successfully";
 } else {
     echo "Error creating activities table: " . mysqli_error($conn);
+}
+
+
+// Create phone number table
+$sql = "CREATE TABLE phone_numbers(
+    id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    phone VARCHAR(30) NOT NULL, 
+    study_week INT(1) NOT NULL,
+    )";
+if (mysqli_query($conn, $sql)) {
+    echo "phone number table created successfully";
+} else {
+    echo "Error creating phone number table: " . mysqli_error($conn);
 }
 
 //add activites

@@ -3,7 +3,7 @@ session_start();
 $logged_in_username = $_SESSION["username"];
 
 $servername = "dbhost.cs.man.ac.uk";
-$username = "mbax4ad8";
+$db_username = "mbax4ad8";
 $password = "zxcvbnm64";
 $dbname = "mbax4ad8";
 

@@ -34,9 +34,10 @@
 		 <form action="php/login.php" method="post">
 			<input type="text" name="username" placeholder="Username"><br>
   			<input type="password" name="password" placeholder="Password"><br>
-  			<input type="submit" value="Submit" class="button">
+  		</br>
+  			<input type="submit" value="Log In" class="button">
 		</form>
-		<p class="button">Create a New Account</p>
+		<a class="button" href="new_account.html">I haven't got an account...</a>
 	</body>
 
 </html>

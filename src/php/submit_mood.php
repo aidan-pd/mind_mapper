@@ -2,10 +2,10 @@
 session_start();
 $logged_in_username = $_SESSION["username"];
 
-$servername = "localhost";
-$db_username = "root";
-$password = "";
-$dbname = "mind_mapper";
+$servername = "dbhost.cs.man.ac.uk";
+$username = "mbax4ad8";
+$password = "zxcvbnm64";
+$dbname = "mbax4ad8";
 
 $mood_type = $_POST["mood_type"];
 $mood_intensity = $_POST["mood_intensity"];

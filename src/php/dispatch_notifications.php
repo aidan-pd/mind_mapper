@@ -1,9 +1,9 @@
 <?php
 	//get the phone numbers from the database where the study_week matches the one given
-	$servername = "localhost";
-	$username = "root";
-	$password = "";
-	$dbname = "mind_mapper";
+$servername = "dbhost.cs.man.ac.uk";
+$username = "mbax4ad8";
+$password = "zxcvbnm64";
+$dbname = "mbax4ad8";
 
 	// Create connection
 	$conn = mysqli_connect($servername, $username, $password, $dbname);

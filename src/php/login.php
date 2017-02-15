@@ -4,11 +4,10 @@ session_start();
 
 $_SESSION["logged_in"] = "FALSE";
 
-	$servername = "localhost";
-	$username = "root";
-	$password = "";
-	$dbname = "mind_mapper";
-
+$servername = "dbhost.cs.man.ac.uk";
+$username = "mbax4ad8";
+$password = "zxcvbnm64";
+$dbname = "mbax4ad8";
 	$submitted_username = $_POST["username"];
 	$submitted_password = $_POST["password"];
 

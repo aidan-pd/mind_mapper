@@ -1,24 +1,72 @@
 body{background-color:white; }
 body *{margin:auto; }
 
+
+#activity_widget_box{
+	width:100%;
+	background-color:white;
+	margin-top:5px;
+	border-style: solid;
+	border-width: 2px;
+	border-color: black;
+	border-radius: 10px;
+	font-family: 'Roboto', sans-serif;
+	font-size: 18px;
+	color: black;	
+	font-weight: lighter;
+	margin-bottom: 20px;
+}
+
+
+
+
 .widget_box{
 	width:100%;
 	background-color:white;
 	margin-top:5px;
-	border-radius:5px;
-	border-style:solid;
-	border-width:2px;
-	border-color:#ededed;
-
+	border-style: solid;
+	border-width: 2px;
+	border-color: black;
+	border-radius: 10px;
+	font-family: 'Roboto', sans-serif;
+	font-size: 18px;
+	color: black;	
+	font-weight: lighter;
+	margin-bottom: 20px;
 }
+
+.widget_box_blue{
+	width:100%;
+	background-color:white;
+	margin-top:5px;
+	border-style: solid;
+	border-width: 2px;
+	border-color: #007AFF;
+	border-radius: 10px;
+	font-family: 'Roboto', sans-serif;
+	font-size: 18px;
+	color: #007AFF;	
+	font-weight: lighter;
+	margin-bottom: 20px;
+}
+
 
 .widget_text{
 	padding:10px;
 	color: black;
 	font-family: 'Roboto', sans-serif;
-	margin:0px;
-	font-weight:600;
-	font-size:16px;
+	font-size: 18px;
+	color: black;	
+	font-weight: lighter;
+}
+
+.widget_text_blue{
+	padding:10px;
+	color: #007AFF;
+	font-family: 'Roboto', sans-serif;
+	font-size: 18px;
+	font-weight: lighter;
+	text-align: center;
 }
 
 h1{
@@ -101,6 +149,9 @@ h1{
 
 #add_activity_button{
 	height:60px;
+	border-top-style: solid;
+	border-top-width: 2px;
+	border-top-color: black;
 }
 
 #add_activity_button:hover{
@@ -114,13 +165,20 @@ h1{
 	padding-top:10px;
 }
 
+#add_activity{
+	margin:0px auto;
+
+}
+
 #add_activity #text_box{
 	background-color:white;
 	height:25px;
-	width:280px;
+	width:300px;
+	margin: 0 auto;
+ 	display:inline-block;
+
 	font-family: 'Roboto', sans-serif;
-	font-colour:black;
-	margin-left:8px;
+	padding-left:8px;
 	padding:10px;
 	font-size:16px;
 	font-weight:600;
@@ -128,6 +186,7 @@ h1{
 	border-width:2px;
 	border-radius:50px;
 	margin-bottom:5px;
+
 }
 
 #choose_icon{
@@ -154,6 +213,10 @@ h1{
 .icon img{
 	display:block;
 	margin:auto;
+}
+
+#text_box{
+	width: 100%;
 }
 
 #add_activity .submit_button{

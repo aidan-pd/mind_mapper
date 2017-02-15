@@ -2,7 +2,7 @@
 
 session_start();
 
-$_SESSION["logged_in"] = 0;
+$_SESSION["logged_in"] = "FALSE";
 
 	$servername = "localhost";
 	$username = "root";
@@ -31,15 +31,29 @@ $_SESSION["logged_in"] = 0;
 					//get result from query
 					$result = mysqli_fetch_assoc($results);
 
+
+
+					//secure password decoding
+					if (password_verify(
+					    base64_encode(hash('sha256', $_POST['password'], true)
+					    ),$result['password'])) {
+					    header( "Location: ../welcome_page.php" );	
+						$_SESSION["logged_in"] = "TRUE";
+						$_SESSION["username"] = $submitted_username;
+
+					} else {
+					    echo "Invalid Password";
+					}
+
 					//checks if password is correct
-					if($result['password'] == $submitted_password){
-						header( "Location: ../mood_entry_page.php" );	
-						$_SESSION["logged_in"] = 1;
+					/*if($result['password'] == $submitted_password){
+						header( "Location: ../welcome_page.php" );	
+						$_SESSION["logged_in"] = "TRUE";
 						$_SESSION["username"] = $submitted_username;
 					}
 					else{
 						echo "Invalid Password";
-					}
+					}*/
 
 					
 

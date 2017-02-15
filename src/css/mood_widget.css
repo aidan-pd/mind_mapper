@@ -1,0 +1,80 @@
+#mood_widget_box{
+	width: 100%;
+}
+
+#mood_widget_box p{
+	font-family: 'Roboto', sans-serif;
+
+}
+
+#background_colours{
+
+	z-index: -1;
+	position: absolute;
+	background-image: url("../images/grid_background.png");
+	background-size: 100% 100%;
+	margin: auto;
+	padding: auto;
+	border-radius: 5px;
+}
+
+#grid_table{
+	width: 100%;
+	border-collapse: collapse;
+    border-spacing: 0;
+	/*background-image: url("../images/grid_background.png");
+	background-size: 100% 100%;
+	background-position: 16% auto;*/
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+.row_title{
+	padding-right: 10px;
+}
+
+.grid_square{
+	background-image: url("../images/grid_button.png");
+	background-size: 0.5cm 0.5cm;
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 16%;
+	margin: 0px;
+	padding: 0px;
+	border-radius: 100px;
+
+
+}
+
+.grid_square:hover{
+	/*background-color: white;*/
+}
+
+.grid_square_btm p{
+	text-align: center;
+
+}
+
+#save_mood_button{
+	font-family: 'Roboto', sans-serif;
+	font-size: 18px;
+	color: #007AFF;	
+	font-weight: lighter;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #007AFF;
+	border-radius: 10px;
+	text-align: center;
+	padding: 10px;
+	margin-top: 10px;
+
+
+}
+
+
+
+#notesBox{
+	width: 100%;
+	font-family: 'Roboto', sans-serif;
+	font-size: 22px;
+	font-weight: lighter;
+}

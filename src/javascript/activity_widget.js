@@ -14,20 +14,31 @@ $(document).ready(function(){
     $("#choose_activity").hide();
     $("#add_activity").hide();
 
+    //clicking on defualt button. transioning to activity selection
     $("#no_activity_selected").click(function(){
 		
+
+        $("#activity_widget_box").removeClass("widget_box_blue");
+        $("#activity_widget_box").addClass("widget_box");
+
         $("#no_activity_selected").hide();
 		$("#choose_activity").show();
 
+
+
     })
 	
+    //clicking an activity
     $("#existing_activities").click(function(){
 		
 		$("#choose_activity").hide();
         $("#activity_selected").show();
 
+
+
     })	
 	
+    //
     $("#activity_selected").click(function(){
 		
         $("#activity_selected").hide();

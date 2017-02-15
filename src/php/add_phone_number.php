@@ -25,7 +25,7 @@ if (mysqli_query($conn, $sql)) {
 
 
 	if ($results = mysqli_query($conn, $sql)) {
-		$result = mysqli_fetch_assoc($results)
+		$result = mysqli_fetch_assoc($results);
 		$study_week = $result['study_week'];
 
 	    $sql = "INSERT INTO phone_numbers (phone, study_week) VALUES ('$phone_number', '$study_week')";

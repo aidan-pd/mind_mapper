@@ -6,7 +6,7 @@ if ($_SESSION["logged_in"] == "TRUE"){
 	$logged_in_username = $_SESSION["username"];
 }
 else{
-	header( 'Location: /mind_mapper/src/login_page.php' ) ;
+	header( 'Location: /mbax4ad8/src/src/login_page.php ) ;
 }
 ?>
 

@@ -3,7 +3,7 @@ var daysOffset = -1;
 
 function pointAction(event){
 	var name = event.target;
-	alert(name);
+	alert(event.target.name);
 }
 
 var graph_data;

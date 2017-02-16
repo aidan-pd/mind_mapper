@@ -148,6 +148,8 @@ function graph(){
 
 		doPlot();
 
+		var plottedPoints = [];
+
 		function doPlot(){
 			//plots points
 			for (var i = 0; i < points.length; i++) {
@@ -177,6 +179,10 @@ function graph(){
 					dot.scaleX = dot.scaleY = currentPoint.pointSize;
 					dot.addEventListener("click", function(event) { pointAction(event); })
 					dot.name = currentPoint.pName;
+
+					var plottedPointsSize = plottedPoints.size;
+					plottedPoints[plottedPointsSize+1] = dot;
+
 					stage.addChild(dot);
 	 				stage.update();
 							

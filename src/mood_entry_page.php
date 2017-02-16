@@ -236,6 +236,6 @@ else{
 </form>
 
 <p id="save_mood_button" onclick="">Save Mood</p>
-
+</br>
 </body>
 </html>

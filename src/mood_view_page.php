@@ -31,6 +31,7 @@ else{
 	<img onclick="moveBackwardsInTimeBy(1)" src="images/earlier_button.png" height="80%">
 	<img onclick="moveForwardInTimeBy(1)" src="images/later_button.png" height="80%">
 	<img onclick="goToHourView()" src="images/clock_icon.png" height="80%">
+	<img id="loading" src="images/spin.gif" height="80%">
 
 </div>
 

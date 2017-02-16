@@ -3,6 +3,20 @@
 
 
 <html>
+<script>
+	$( "#newAccountForm" ).submit(function( event ) {
+		event.preventDefault();
+		if($("#usernameField").value == null){
+			alert("Please enter a username and password.");
+		}
+		else if($("#usernameField").value == null){
+			alert("Please enter a username and password.");
+		}
+		else{
+			$( "#newAccountForm" ).submit();
+		}
+	});
+</script>
 	<head>
 		<link rel="stylesheet" type="text/css" href="css/welcome_page.css">
 		<link rel="stylesheet" type="text/css" href="css/login_page.css">
@@ -36,9 +50,9 @@
 		 <p id="subText">Welcome to QS Mood Logger! Create an account below. Please do not use your real name as your username.</p>
 
 
-		 <form action="php/add_new_account.php" method="post">
-			<input type="text" name="username" placeholder="Username"><br>
-  			<input type="password" name="password" placeholder="Password"><br>
+		 <form id="newAccountForm" action="php/add_new_account.php" method="post">
+			<input id="usernameField" type="text" name="username" placeholder="Username"><br>
+  			<input id="passwordField" type="password" name="password" placeholder="Password"><br>
   		</br>
   			<input type="submit" value="Create New Account" class="button">
 		</form>

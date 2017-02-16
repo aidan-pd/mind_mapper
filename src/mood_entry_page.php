@@ -163,7 +163,6 @@ else{
 
 
 <h1>Activity</h1>
-<p class="optional_text">(Optional)</p>
 <div class="widget_box_blue" id="activity_widget_box">
 
 	<div id="no_activity_selected">

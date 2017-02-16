@@ -154,7 +154,7 @@ function graph(){
 
 			//remove current points to get rid of event listeners
 			for (var i = 0; i < plottedPoints.length; i++) {
-				plottedPoints[i].removeEventListener("click");
+				plottedPoints[i].removeEventListener("click", function(event) { pointAction(event); });
 			};
 
 			//plots points
@@ -183,7 +183,7 @@ function graph(){
 					dot.y = gridPoint.yCenter;
 
 					dot.scaleX = dot.scaleY = currentPoint.pointSize;
-					dot.addEventListener("click", function(event) { pointAction(event); })
+					dot.addEventListener("click", function(event) { pointAction(event); });
 					dot.name = currentPoint.pName;
 
 					var plottedPointsSize = plottedPoints.length;

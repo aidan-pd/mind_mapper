@@ -167,7 +167,7 @@ function getTime(aTime){
 }
 
 function getTimeLabel(aTime){
-		return ""+aTime.hour()+":00\n"+aTime.date()+"-"+aTime.month()+"";
+		return ""+aTime.hour()+":00\n"+aTime.date()+"-"+(aTime.month()+1)+"";
 }
 
 

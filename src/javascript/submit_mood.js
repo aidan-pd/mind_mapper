@@ -4,8 +4,10 @@ $(document).ready(function(){
 
 		if (selected_mood == "none"){
 			//if no mood selected
+			alert("Please select a mood and activity.");
 		}
 		else{
+			selected_activity = $("#activity_selected_text_container p").text();
 			var request = $.ajax({
 	            method: "POST",
 	            url: "php/submit_mood.php",

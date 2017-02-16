@@ -24,7 +24,6 @@ else{
 <script src="moment.js"></script>
 
 </head>
-<p id="loading">Loading...</p>
 <body onload="startSetup();">
 <canvas id="graphCanvas"></canvas>
 <div id="graphControls">

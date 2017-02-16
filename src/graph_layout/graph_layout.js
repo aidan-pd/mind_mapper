@@ -180,7 +180,7 @@ function graph(){
 					dot.addEventListener("click", function(event) { pointAction(event); })
 					dot.name = currentPoint.pName;
 
-					var plottedPointsSize = plottedPoints.size;
+					var plottedPointsSize = plottedPoints.length;
 					plottedPoints[plottedPointsSize+1] = dot;
 
 					stage.addChild(dot);

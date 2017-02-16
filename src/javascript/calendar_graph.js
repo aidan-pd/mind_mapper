@@ -210,3 +210,7 @@ function moveBackwardsInTimeBy(numberOfDays){
 	daysOffset = daysOffset + numberOfDays;
 	startSetup();
 }
+
+function goToHourView(){
+	window.location = "mood_view_page_day.php";
+}

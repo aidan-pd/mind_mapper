@@ -5,7 +5,7 @@ function pointAction(event){
 	var name = event.target;
 	//var firstParse = name.split("=");
 	//var secondParse = firstParse[1].split(")");
-	alert(event.target.nodeName);
+	alert(event.target.name);
 }
 
 var graph_data;

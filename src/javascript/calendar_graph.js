@@ -3,9 +3,9 @@ var daysOffset = -1;
 
 function pointAction(event){
 	var name = event.target;
-	var firstParse = name.split("=");
-	var secondParse = firstParse[1].split(")");
-	alert(secondParse[0]);
+	//var firstParse = name.split("=");
+	//var secondParse = firstParse[1].split(")");
+	alert(event.target.nodeName);
 }
 
 var graph_data;

@@ -204,6 +204,7 @@ function getImageScale(intensity){
 }
 
 function moveForwardInTimeBy(numberOfDays){
+	
 	daysOffset = daysOffset - numberOfDays;
 	startSetup();
 }

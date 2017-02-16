@@ -145,10 +145,10 @@ function graph(){
 			}//if statement
 		};//for loop
 
+		var plottedPoints = [];
 
 		doPlot();
 
-		var plottedPoints = [];
 
 		function doPlot(){
 			//plots points

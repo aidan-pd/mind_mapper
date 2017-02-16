@@ -5,24 +5,7 @@
 <html>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
-<script>
-	$(document).ready(function(){
 
-		function submitForm(){
-
-			if($("#usernameField").value == ""){
-				alert("Please enter a username and password.");
-			}
-			else if($("#passwordField").value == ""){
-				alert("Please enter a username and password.");
-			}
-			else{
-				$("#newAccountForm").submit();
-			}	
-		}
-
-	});
-</script>
 	<head>
 		<link rel="stylesheet" type="text/css" href="css/welcome_page.css">
 		<link rel="stylesheet" type="text/css" href="css/login_page.css">
@@ -51,6 +34,23 @@
 		
 	</head>
 	<body>
+		<script>
+
+				function submitForm(){
+
+					if($("#usernameField").value == ""){
+						alert("Please enter a username and password.");
+					}
+					else if($("#passwordField").value == ""){
+						alert("Please enter a username and password.");
+					}
+					else{
+						$("#newAccountForm").submit();
+					}	
+				}
+
+		</script>
+		
 		 <p id="titleText">QS <br> MoodLogger</p>
 
 		 <p id="subText">Welcome to QS Mood Logger! Create an account below. Please do not use your real name as your username.</p>

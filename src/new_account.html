@@ -7,18 +7,20 @@
 
 <script>
 	$(document).ready(function(){
-		$("#newAccountForm").submit(function(event) {
-			event.preventDefault();
-			if($("#usernameField").value == null){
+
+		function submitForm(){
+
+			if($("#usernameField").value == ""){
 				alert("Please enter a username and password.");
 			}
-			else if($("#usernameField").value == null){
+			else if($("#passwordField").value == ""){
 				alert("Please enter a username and password.");
 			}
 			else{
 				$("#newAccountForm").submit();
-			}
-		});
+			}	
+		}
+
 	});
 </script>
 	<head>
@@ -58,7 +60,8 @@
 			<input id="usernameField" type="text" name="username" placeholder="Username"><br>
   			<input id="passwordField" type="password" name="password" placeholder="Password"><br>
   		</br>
-  			<input type="submit" value="Create New Account" class="button">
+  			<a class="button" href="login_page.php">Create New Account</a>
+
 		</form>
 	</br>
 		<a class="button" href="login_page.php">I've already got an account...</a>

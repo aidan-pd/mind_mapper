@@ -38,10 +38,10 @@
 
 				function submitForm(){
 
-					if($("#usernameField").value == ""){
+					if($("#usernameField").value.length == 0){
 						alert("Please enter a username and password.");
 					}
-					else if($("#passwordField").value == ""){
+					else if($("#passwordField").value.length == 0){
 						alert("Please enter a username and password.");
 					}
 					else{
@@ -50,7 +50,7 @@
 				}
 
 		</script>
-		
+
 		 <p id="titleText">QS <br> MoodLogger</p>
 
 		 <p id="subText">Welcome to QS Mood Logger! Create an account below. Please do not use your real name as your username.</p>

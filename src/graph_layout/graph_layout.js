@@ -151,6 +151,12 @@ function graph(){
 
 
 		function doPlot(){
+
+			//remove current points to get rid of event listeners
+			for (var i = 0; i < plottedPoints.length; i++) {
+				plottedPoints[i].removeEventListener("click", pointAction(event));
+			};
+
 			//plots points
 			for (var i = 0; i < points.length; i++) {
 				//IF to check if rendering speficied grid reference
@@ -177,7 +183,7 @@ function graph(){
 					dot.y = gridPoint.yCenter;
 
 					dot.scaleX = dot.scaleY = currentPoint.pointSize;
-					dot.addEventListener("click", function(event) { pointAction(event); })
+					dot.addEventListener("click", pointAction(event));
 					dot.name = currentPoint.pName;
 
 					var plottedPointsSize = plottedPoints.length;

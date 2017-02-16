@@ -63,7 +63,7 @@ function startSetup(){
 
 		for (var i = amountOfHoursToDisplay-1; i >= 0; i--) {
 			//alert(getDate(moment().subtract(i+daysOffset, 'days')));
-			xAxis.push(new axisPoint(getTimeLabel(moment().subtract(i+daysOffset, 'hours')), getTime(moment().subtract(i+daysOffset, 'hours'))));
+			xAxis.push(new axisPoint(getTime(moment().subtract(i+daysOffset, 'hours')), getTime(moment().subtract(i+daysOffset, 'hours'))));
 		};
 
 		/*xAxis.push(new axisPoint("1", "1"));

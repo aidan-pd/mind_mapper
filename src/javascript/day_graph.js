@@ -221,6 +221,6 @@ function moveBackwardsInTimeBy(numberOfDays){
 	startSetup();
 }
 
-function goToHourView(){
+function goToCalendarView(){
 	window.location = "mood_view_page.php";
 }

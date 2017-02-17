@@ -8,7 +8,9 @@ function pointAction(event){
 
 	$("#popup p").text("");
 
-	$("#popup p").text(event.target.name);
+	var name = event.target.name;
+
+	$("#popup p").text(name);
 	
 
 	//alert(event.target.name);

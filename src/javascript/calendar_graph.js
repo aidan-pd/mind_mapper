@@ -2,7 +2,6 @@ var amountOfDaysToDisplay = 7;
 var daysOffset = -1;
 
 function pointAction(event){
-	var name = event.target;
 	//var firstParse = name.split("=");
 	//var secondParse = firstParse[1].split(")");
 	$("#popup").show();

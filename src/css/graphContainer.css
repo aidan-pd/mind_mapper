@@ -44,7 +44,11 @@ p{
 }
 
 #popup p{
-	background-color: black;
-	color: white;
-	
+	font-family: 'Roboto', sans-serif;
+	font-size: 18px;
+
+	background-color: white;
+	color: #007AFF;
+	padding: 10px;
+	border-radius: 10px;
 }

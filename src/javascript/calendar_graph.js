@@ -5,7 +5,10 @@ function pointAction(event){
 	var name = event.target;
 	//var firstParse = name.split("=");
 	//var secondParse = firstParse[1].split(")");
-	alert(event.target.name);
+	$("#popup").show();
+	$("#popup p").val(event.target.name);
+
+	//alert(event.target.name);
 }
 
 var graph_data;
@@ -32,6 +35,9 @@ function getData(){
 }
 
 function startSetup(){
+
+	$("#hide").show();
+
 
 
 	if(data == ""){

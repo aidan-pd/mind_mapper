@@ -42,3 +42,8 @@ p{
 	width: 80%;
 	background-color: black;
 }
+
+#popup p{
+	background-color: black;
+	color: white;
+}

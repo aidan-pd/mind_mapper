@@ -27,9 +27,9 @@ else{
 <body onload="startSetup();">
 
 	<div id="popup">
-	<p>POPUP<p>
+		<p>POPUP<p>
 	</div>
-		
+
 	<canvas id="graphCanvas"></canvas>
 
 

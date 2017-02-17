@@ -36,7 +36,7 @@ function getData(){
 
 function startSetup(){
 
-	$("#hide").show();
+	$("#popup").hide();
 
 
 

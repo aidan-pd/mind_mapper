@@ -26,7 +26,7 @@ else{
 </head>
 <body onload="startSetup();">
 
-	<div id="popup">
+	<div id="popup" onclick="closePopup()">
 		<p>POPUP<p>
 	</div>
 

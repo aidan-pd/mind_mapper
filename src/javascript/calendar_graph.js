@@ -165,7 +165,7 @@ function startSetup(){
 
 
 createjs.Ticker.addEventListener("tick", handleTick);
-createjs.Ticker.framerate = 10;
+createjs.Ticker.framerate = 15;
 function handleTick(){
 
 		if(createjs.Ticker.paused != true){
@@ -220,12 +220,15 @@ function getImageScale(intensity){
 }
 
 function moveForwardInTimeBy(numberOfDays){
-	
+	createjs.Ticker.paused = false;
+
 	daysOffset = daysOffset - numberOfDays;
 	startSetup();
 }
 
 function moveBackwardsInTimeBy(numberOfDays){
+	createjs.Ticker.paused = false;
+
 	daysOffset = daysOffset + numberOfDays;
 	startSetup();
 }

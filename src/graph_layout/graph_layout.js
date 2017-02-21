@@ -142,7 +142,7 @@ function graph(){
 
 				//animate
 				dotXLine.alpha = 0;
-				createjs.Tween.get(target).to({alpha:1}, 1000).call();
+				//createjs.Tween.get(target).to({alpha:1}, 1000).call();
 
 				stage.addChild(dotXLine);
 

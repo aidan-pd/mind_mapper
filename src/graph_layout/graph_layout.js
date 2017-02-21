@@ -190,11 +190,11 @@ function graph(){
 					currentPoint = points[i];
 					//draws dot image
 
-					//XXXdotImage = new Image();
+					dotImage = new Image();
 
-					//XXXdotImage.src = currentPoint.image;
+					dotImage.src = currentPoint.image;
 
-					dotImage = getIcon(currentPoint.image);
+					///XXXdotImage = getIcon(currentPoint.image);
 
 
 					//takes image to global scope so areImagesLoaded can test

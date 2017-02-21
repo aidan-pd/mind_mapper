@@ -214,11 +214,15 @@ function getImageScale(intensity){
 }
 
 function moveForwardInTimeBy(numberOfDays){
+	createjs.Ticker.paused = false;
+	$("#loading").show();
 	daysOffset = daysOffset - numberOfDays;
 	startSetup();
 }
 
 function moveBackwardsInTimeBy(numberOfDays){
+	createjs.Ticker.paused = false;
+	$("#loading").show();
 	daysOffset = daysOffset + numberOfDays;
 	startSetup();
 }

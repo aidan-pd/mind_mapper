@@ -146,7 +146,7 @@ function graph(){
 		};//for loop
 
 
-
+/*
 		//icon_preloader
 		var icons = [];
 		var iconsURLs = ["resting_icon","work_icon","travelling_icon","bexercise_icon","aexercise_icon","icon_1","icon_2","icon_3","icon_4"];
@@ -169,7 +169,7 @@ function graph(){
 
 			return icons[indexNum];
 		}
-
+*/
 
 		var plottedPoints = [];
 

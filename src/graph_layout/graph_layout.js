@@ -301,7 +301,7 @@ function graph(){
 }
 
 function areImagesLoaded(){
-	if(loadImage.complete || loadImage == ""){
+	if(loadImage.complete){
 		return true;
 	}
 }

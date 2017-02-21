@@ -1,4 +1,4 @@
-//REMEMBER - requires jQuery and EasleJS
+//REMEMBER - requires jQuery and EasleJS and TweenJS
 //V.5
 
 
@@ -139,6 +139,11 @@ function graph(){
 				dotXLine.graphics.setStrokeStyle(2).beginStroke("black");
 				dotXLine.graphics.moveTo(gridPoint.xCenter, (containerHeight-bottomBuffer));
 				dotXLine.graphics.lineTo(gridPoint.xCenter,gridPoint.yCenter);
+
+				//animate
+				dotXLine.alpha = 0;
+				createjs.Tween.get(target).to({alpha:1}, 1000).call();
+
 				stage.addChild(dotXLine);
 
 		

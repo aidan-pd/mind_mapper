@@ -21,6 +21,8 @@ else{
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.bundle.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="https://code.createjs.com/easeljs-0.8.2.min.js"></script>
+<script src="https://code.createjs.com/tweenjs-0.6.2.min.js"></script>
+
 <script src="graph_layout/graph_layout.js"></script>
 <script src="javascript/calendar_graph.js"></script>
 <script src="moment.js"></script>

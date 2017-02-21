@@ -176,7 +176,7 @@ function graph(){
 		doPlot();
 
 		loadImage = new Image();
-		loadImage.src = "http://i.dailymail.co.uk/i/pix/2010/03/29/article-1261756-08E876EC000005DC-600_634x534.jpg";
+		loadImage.src = "images/sign.jpg";
 
 		function doPlot(){
 

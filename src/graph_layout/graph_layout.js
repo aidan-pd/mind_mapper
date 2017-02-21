@@ -175,6 +175,9 @@ function graph(){
 
 		doPlot();
 
+		loadImage = new Image();
+		loadImage.src = "http://i.dailymail.co.uk/i/pix/2010/03/29/article-1261756-08E876EC000005DC-600_634x534.jpg";
+
 		function doPlot(){
 
 			//remove current points to get rid of event listeners
@@ -198,7 +201,7 @@ function graph(){
 
 
 					//takes image to global scope so areImagesLoaded can test
-					loadImage = dotImage;
+					//loadImage = dotImage;
 
 					
 

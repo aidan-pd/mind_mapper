@@ -149,7 +149,7 @@ function startSetup(){
 
 
 createjs.Ticker.addEventListener("tick", handleTick);
-createjs.Ticker.framerate = 0.1;
+createjs.Ticker.framerate = 15;
 function handleTick(){
 
 		if(createjs.Ticker.paused != true){

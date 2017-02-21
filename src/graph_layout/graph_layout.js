@@ -2,7 +2,7 @@
 //V.5
 
 
-var loadImage;
+var loadImage = "";
 
 function graph(){
 
@@ -301,7 +301,7 @@ function graph(){
 }
 
 function areImagesLoaded(){
-	if(loadImage.complete || loadImage == null){
+	if(loadImage.complete || loadImage == ""){
 		return true;
 	}
 }

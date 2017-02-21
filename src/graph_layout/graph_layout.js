@@ -145,10 +145,35 @@ function graph(){
 			}//if statement
 		};//for loop
 
+
+
+		//icon_preloader
+		var icons = [];
+		var iconsURLs = ["resting_icon","work_icon","travelling_icon","bexercise_icon","aexercise_icon","icon_1","icon_2","icon_3","icon_4"];
+		preLoadIcons();
+		function preLoadIcons(){
+			for (var i = iconsURLs.length - 1; i >= 0; i--) {
+				icon = new Image();
+				icon.src = "images/"+iconsURLs[i]+".png";
+			}
+		}
+
+		function getIcon(url){
+			//get index number
+			var indexNum = 0;
+			for (var i = 0; i < iconsURLs.length; i++) {
+				if(iconsURLs == url){
+					indexNum = i;
+				}
+			}
+
+			return icons[indexNum];
+		}
+
+
 		var plottedPoints = [];
 
 		doPlot();
-
 
 		function doPlot(){
 
@@ -164,13 +189,16 @@ function graph(){
 					
 					currentPoint = points[i];
 					//draws dot image
-					dotImage = new Image();
 
-					dotImage.src = currentPoint.image;
+					//XXXdotImage = new Image();
+
+					//XXXdotImage.src = currentPoint.image;
+
+					dotImage = getIcon(currentPoint.image);
+
 
 					//takes image to global scope so areImagesLoaded can test
 					loadImage = dotImage;
-
 
 					
 
@@ -196,17 +224,7 @@ function graph(){
 			};//for loop
 		}//doPlot
 
-
-
-
-		
-
-
-
  		stage.update();
-
-
-
 
 		//stage.update();
 
@@ -241,8 +259,6 @@ function graph(){
 								};	
 					gridsPoints.push(gridPoint);
 				
-
-
 			}
 		}
 		return gridsPoints;

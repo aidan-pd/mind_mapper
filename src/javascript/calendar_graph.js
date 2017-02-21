@@ -221,6 +221,7 @@ function getImageScale(intensity){
 
 function moveForwardInTimeBy(numberOfDays){
 	createjs.Ticker.paused = false;
+	$("#loading").show();
 
 	daysOffset = daysOffset - numberOfDays;
 	startSetup();
@@ -228,6 +229,7 @@ function moveForwardInTimeBy(numberOfDays){
 
 function moveBackwardsInTimeBy(numberOfDays){
 	createjs.Ticker.paused = false;
+	$("#loading").show();
 
 	daysOffset = daysOffset + numberOfDays;
 	startSetup();

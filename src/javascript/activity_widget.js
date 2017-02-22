@@ -90,7 +90,7 @@ $(document).ready(function(){
         }).done(function(){
             load_activities_grid();
             $("#add_activity").hide();
-            $("#activity_selected").show();
+            $("#choose_activity").show();
 
             selected_activity = activity_name;
 

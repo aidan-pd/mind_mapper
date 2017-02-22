@@ -16,6 +16,10 @@ function pointAction(event){
 	//alert(event.target.name);
 }
 
+function closePopup(){
+	$("#popup").hide();
+}
+
 var graph_data;
 
 var data = "";
@@ -40,6 +44,8 @@ function getData(){
 }
 
 function startSetup(){
+
+	$("#popup").hide();
 
 
 	if(data == ""){

@@ -2,8 +2,18 @@ var amountOfHoursToDisplay = 7;
 var daysOffset = -1;
 
 function pointAction(event){
-	var name = event.target;
-	alert(event.target.name);
+	//var firstParse = name.split("=");
+	//var secondParse = firstParse[1].split(")");
+	$("#popup").show();
+
+	$("#popup p").text("");
+
+	var name = event.target.name;
+
+	$("#popup p").text(name);
+	
+
+	//alert(event.target.name);
 }
 
 var graph_data;

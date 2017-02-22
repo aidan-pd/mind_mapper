@@ -28,13 +28,18 @@ else{
 </head>
 <body onload="startSetup();">
 
-<canvas id="graphCanvas"></canvas>
-<div id="graphControls">
-	<img onclick="moveBackwardsInTimeBy(1)" src="images/earlier_button.png" height="80%">
-	<img onclick="moveForwardInTimeBy(1)" src="images/later_button.png" height="80%">
-	<img onclick="goToCalendarView()" src="images/calendar_icon.png" height="80%">
-	<img id="loading" src="images/spin.gif" height="80%">
 
-</div>
+	<div id="popup" onclick="closePopup()">
+		<p><p>
+	</div>
+
+	<canvas id="graphCanvas"></canvas>
+	<div id="graphControls">
+		<img onclick="moveBackwardsInTimeBy(1)" src="images/earlier_button.png" height="80%">
+		<img onclick="moveForwardInTimeBy(1)" src="images/later_button.png" height="80%">
+		<img onclick="goToCalendarView()" src="images/calendar_icon.png" height="80%">
+		<img id="loading" src="images/spin.gif" height="80%">
+
+	</div>
 
 </body>

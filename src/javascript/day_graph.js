@@ -118,8 +118,8 @@ function startSetup(){
 		graphX.drawGraph("graphCanvas", vp);
 
 		$( window ).resize(function() {
-			$("#graphCanvas").attr("width", $(window).width());
-			$("#graphCanvas").attr("height", $(window).height()-30);
+			$("#graphCanvas").attr("width", $(window).width()*2);
+			$("#graphCanvas").attr("height", ($(window).height()*2)-30);
 			graphX.drawGraph("graphCanvas", vp);
 
 		});

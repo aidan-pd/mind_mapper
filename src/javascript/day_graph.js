@@ -58,8 +58,8 @@ function startSetup(){
 
 
 		//fill graph to screen size
-		$("#graphCanvas").attr("width", $(window).width()*2);
-		$("#graphCanvas").attr("height", ($(window).height()*2)-30);
+		$("#graphCanvas").attr("width", $(window).width());
+		$("#graphCanvas").attr("height", $(window).height()-30);
 
 
 		//set up axes
@@ -117,13 +117,9 @@ function startSetup(){
 		
 		graphX.drawGraph("graphCanvas", vp);
 
-		$("#graphCanvas").attr("width", $(window).width()/2);
-		$("#graphCanvas").attr("height", ($(window).height()/2)-30);
-
-
 		$( window ).resize(function() {
-			$("#graphCanvas").attr("width", $(window).width()*2);
-			$("#graphCanvas").attr("height", ($(window).height()*2)-30);
+			$("#graphCanvas").attr("width", $(window).width());
+			$("#graphCanvas").attr("height", $(window).height()-30);
 			graphX.drawGraph("graphCanvas", vp);
 
 		});

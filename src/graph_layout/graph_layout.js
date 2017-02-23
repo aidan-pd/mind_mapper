@@ -32,8 +32,8 @@ function graph(){
 
 	function drawGraph(container, viewport){
 
-		var containerWidth = $("#"+container).width();
-		var containerHeight = $("#"+container).height();
+		var containerWidth = $("#"+container).width() * 2;
+		var containerHeight = $("#"+container).height() *2;
 
 
 		//stores the axisPoints of the graph with the viewport parameters applies

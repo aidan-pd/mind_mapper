@@ -56,7 +56,7 @@ else{
 		function doAlert(data){
 			week = data;
 			if(week =="0"){
-		 		logWeekOne();
+		 		$("body").prepend("<?php include_once(\"php/week_one_tracking.php\") ?>");
 		 	}
 		}
 

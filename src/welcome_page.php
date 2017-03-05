@@ -56,7 +56,7 @@ else{
 
 		  ga('create', 'UA-92514395-1', 'auto');
 		  ga('send', 'pageview');
-		  ga('set', 'userId', {{week}}); // Set the user ID using signed-in user_id.
+		  ga('set', 'userId', week); // Set the user ID using signed-in user_id.
 		</script>
 
 

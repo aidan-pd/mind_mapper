@@ -61,7 +61,7 @@ class Window {
 
 
 $( document ).ready(function() {
-    $('head').append("<link rel=\"stylesheet\" type=\"text/css\" href=\"window.css\">");
+    $('head').append("<link rel=\"stylesheet\" type=\"text/css\" href=\"window_manager/window.css\">");
  
     
 });

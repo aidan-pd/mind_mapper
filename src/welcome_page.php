@@ -52,7 +52,12 @@ else{
 		<script>
 
 		var week;
-		 $(week).load("php/check_study_week.php");
+
+		function doAlert(data){
+			alert(data);
+		}
+
+			$.get('php/check_study_week.php' + id, doSomethingWithData);
 
 		 if(week =="1"){
 		 	logWeekOne();

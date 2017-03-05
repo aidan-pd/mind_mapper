@@ -43,7 +43,7 @@ mysqli_close($conn);
 
 
 	//dispatch the notifications 
-	require_once('../../zensend_php_api-master/init.php');
+	require_once('../src/zensend_php_api-master/init.php');
 
 	$client = new ZenSend\Client("Yoxg_bwVBPDyKRemsTjMbw");
 

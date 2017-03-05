@@ -38,6 +38,16 @@ else{
 		<meta name="theme-color" content="#ffffff">
 		
 		<script>
+
+		var week;
+
+		function doAlert(data){
+			week = data;
+
+		}
+
+		$.get('php/check_study_week.php', doAlert);
+
 		//OVERALL DATA
 		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -46,39 +56,10 @@ else{
 
 		  ga('create', 'UA-92514395-1', 'auto');
 		  ga('send', 'pageview');
-
+		  ga('set', 'userId', {{week}}); // Set the user ID using signed-in user_id.
 		</script>
 
-		<script>
 
-		var week;
-
-		function doAlert(data){
-			week = data;
-			if(week =="0"){
-		 		$("body").prepend("<?php include_once(\"php/week_one_tracking.php\") ?>");
-		 	}
-		}
-
-		$.get('php/check_study_week.php', doAlert);
-
-
-
-		//WEEK ONE
-			function logWeekOne(){
-				alert("week one log");
-				(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-				(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-				m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-				})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-				ga('create', 'UA-92514395-2', 'auto');
-				ga('send', 'pageview');
-			}
-
-			$()
-
-		</script>
 
 		
 	</head>

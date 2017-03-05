@@ -28,13 +28,23 @@ else{
 <script src="moment.js"></script>
 
 	<script>
-	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+		var week;
 
-	  ga('create', 'UA-92514395-1', 'auto');
-	  ga('send', 'pageview');
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+		  ga('create', 'UA-92514395-1', 'auto');
+
+
+		$.get('php/check_study_week.php', function(data){
+			week = data;
+					//OVERALL DATA
+			ga('set', 'userId', week); // Set the user ID using signed-in user_id.
+
+		  	ga('send', 'pageview');
+		});
 
 	</script>
 

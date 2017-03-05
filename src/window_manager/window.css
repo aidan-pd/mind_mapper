@@ -1,0 +1,36 @@
+.window{
+    
+
+    background-color: #ededed;
+    min-height: 100px;
+    min-width: 150px;
+    box-shadow:0px 0px 5px #333333;
+    border-style: ridge;
+    border-width: 3px;
+    border-color: #c3c3c3;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+#windowPane .ui-selected{
+    box-shadow:0px 0px 20px #333333;
+    background-color: #333395;
+}
+
+.window .titleBar{
+    background-color:#1f64ff;
+    padding: 5px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color:white;
+    font-family: sans-serif;
+    font-size: 12px;
+    font-weight: bolder;
+    cursor:grabbing;
+}
+
+#newDiv{
+    background-color: chartreuse;
+    width: 10px;
+    height: 10px;
+}

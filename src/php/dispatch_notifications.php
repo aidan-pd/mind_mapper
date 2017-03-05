@@ -48,7 +48,7 @@ mysqli_close($conn);
 	$client = new ZenSend\Client("Yoxg_bwVBPDyKRemsTjMbw");
 
 	$request = new ZenSend\SmsRequest();
-	$request->body = "Log your mood with QS Mood Logger now!";
+	$request->body = "Log your mood with QS Mood Logger now! https://goo.gl/rrpLlz";
 	$request->originator = "QS Mood Log";
 	//$request->numbers = ["447958015883", "447581277407"];
 	$request->numbers = $phone_numbers;

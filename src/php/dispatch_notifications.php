@@ -26,7 +26,7 @@ $dbname = "mbax4ad8";
 		while($result = mysqli_fetch_assoc($results)){
 
 			//$mood_entry = array($result["mood_type"],$result["mood_intensity"],$result["activity"],$result["free_text"],$result["time_stamp"]);
-			$current_number = $result['phone_number'];
+			$current_number = $result['phone'];
 			if($current_number != NULL){
 				array_push($phone_numbers, $current_number);
 			}

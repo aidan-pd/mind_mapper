@@ -54,12 +54,12 @@ else{
 		var week;
 
 		function doAlert(data){
-			alert(data);
+			week = data;
 		}
 
-			$.get('php/check_study_week.php', doAlert);
+		$.get('php/check_study_week.php', doAlert);
 
-		 if(week =="1"){
+		 if(week =="0"){
 		 	logWeekOne();
 		 }
 

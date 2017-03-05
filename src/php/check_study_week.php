@@ -20,7 +20,7 @@ if (!$conn) {
 $sql = "SELECT study_week FROM users WHERE username = '$logged_in_username'";
 
 if (mysqli_query($conn, $sql)) {
-    echo "Got study week successfully";
+    //echo "Got study week successfully";
 
 
 	if ($results = mysqli_query($conn, $sql)) {

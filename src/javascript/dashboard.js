@@ -12,7 +12,7 @@ function dispatchNotificationSMSWeek1(){
 	$("#response").html("");
 
 
-	$.get( "../php/dispatch_notifications.php", { study_week:"1" }, function( data ) {
+	$.get( "../src/php/dispatch_notifications.php", { study_week:"1" }, function( data ) {
 		$("#dispatchload").hide();
 
 		$("#response").html(""+data);
@@ -34,7 +34,7 @@ function dispatchNotificationSMSWeek2(){
 	$("#response").html("");
 
 
-	$.get( "../php/dispatch_notifications.php", { study_week:"2" }, function( data ) {
+	$.get( "../src/php/dispatch_notifications.php", { study_week:"2" }, function( data ) {
 		$("#dispatchload").hide();
 
 		$("#response").html(""+data);

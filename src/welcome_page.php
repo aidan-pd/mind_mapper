@@ -55,13 +55,14 @@ else{
 
 		function doAlert(data){
 			week = data;
+			if(week =="0"){
+		 		logWeekOne();
+		 	}
 		}
 
 		$.get('php/check_study_week.php', doAlert);
 
-		 if(week =="0"){
-		 	logWeekOne();
-		 }
+
 
 		//WEEK ONE
 			function logWeekOne(){

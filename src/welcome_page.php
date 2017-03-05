@@ -57,7 +57,7 @@ else{
 			alert(data);
 		}
 
-			$.get('php/check_study_week.php', doSomethingWithData);
+			$.get('php/check_study_week.php', doAlert);
 
 		 if(week =="1"){
 		 	logWeekOne();

@@ -14,6 +14,10 @@ else{
 		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+
 		<title>QS Mood Logger</title>
 		<link rel="apple-touch-icon" sizes="57x57" href="icons/apple-icon-57x57.png">
 		<link rel="apple-touch-icon" sizes="60x60" href="icons/apple-icon-60x60.png">
@@ -34,6 +38,7 @@ else{
 		<meta name="theme-color" content="#ffffff">
 		
 		<script>
+		//OVERALL DATA
 		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
 		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -41,6 +46,27 @@ else{
 
 		  ga('create', 'UA-92514395-1', 'auto');
 		  ga('send', 'pageview');
+
+		</script>
+
+		<script>
+
+		var week;
+		 $(week).load("php/check_study_week.php");
+
+
+		//WEEK ONE
+			function logWeekOne(){
+				(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+				(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+				m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+				})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+				ga('create', 'UA-92514395-2', 'auto');
+				ga('send', 'pageview');
+			}
+
+			$()
 
 		</script>
 

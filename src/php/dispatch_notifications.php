@@ -15,8 +15,8 @@ $dbname = "mbax4ad8";
 	$study_week = $_GET["study_week"];
 
 	//select phone numbers
-	$sql = "SELECT phone_number
-			FROM users 
+	$sql = "SELECT phone
+			FROM phone_numbers 
 			WHERE study_week='$study_week'";
 
 	$phone_numbers = array();

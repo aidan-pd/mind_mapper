@@ -52,14 +52,14 @@ else{
 		  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
 		  ga('create', 'UA-92514395-1', 'auto');
-		  ga('set', 'userId', '1'); // Set the user ID using signed-in user_id.
 
-		  ga('send', 'pageview');
 
 		$.get('php/check_study_week.php', function(data){
 			week = data;
 					//OVERALL DATA
-				USER_ID = week;
+			ga('set', 'userId', '1'); // Set the user ID using signed-in user_id.
+
+		  	ga('send', 'pageview');
 		});
 
 

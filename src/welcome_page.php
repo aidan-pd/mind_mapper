@@ -57,7 +57,7 @@ else{
 		$.get('php/check_study_week.php', function(data){
 			week = data;
 					//OVERALL DATA
-			ga('set', 'userId', '1'); // Set the user ID using signed-in user_id.
+			ga('set', 'userId', week); // Set the user ID using signed-in user_id.
 
 		  	ga('send', 'pageview');
 		});

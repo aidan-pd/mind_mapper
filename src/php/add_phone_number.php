@@ -21,7 +21,7 @@ if (!$conn) {
 $sql = "SELECT study_week FROM users WHERE username = '$logged_in_username'";
 
 if (mysqli_query($conn, $sql)) {
-    echo "Got study week successfully";
+    //echo "Got study week successfully";
 
 
 	if ($results = mysqli_query($conn, $sql)) {
@@ -30,7 +30,7 @@ if (mysqli_query($conn, $sql)) {
 
 	    $sql = "INSERT INTO phone_numbers (phone, study_week) VALUES ('$phone_number', '$study_week')";
 		if (mysqli_query($conn, $sql)) {
-		    echo "Added phone number";
+		    echo "You have been successfully enrolled in the study.";
 
 		} else {
 		    echo "Error adding phone number: " . mysqli_error($conn);

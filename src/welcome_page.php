@@ -55,7 +55,6 @@ else{
 			ga('set', 'userId', week); // Set the user ID using signed-in user_id.
 
 			ga('set', 'dimension1', week);
-
 		  	ga('send', 'pageview');
 		});
 

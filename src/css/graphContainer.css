@@ -37,11 +37,11 @@ p{
     bottom: 0;
     left: 0;
     right: 0;
-    height: 0;
 	z-index: 1000;
 }
 
 #popup{
+	text-align: center;
 	font-family: 'Roboto', sans-serif;
 	font-size: 18px;
 	border-color: #007AFF;

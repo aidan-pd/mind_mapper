@@ -52,9 +52,9 @@ else{
 <body onload="startSetup();">
 
 
-	<div id="popup" onclick="closePopup()">
-		<p><p>
-	</div>
+	<p id="popup" onclick="closePopup()">
+
+	</p>
 
 	<canvas id="graphCanvas"></canvas>
 	<div id="graphControls">

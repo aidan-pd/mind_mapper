@@ -6,11 +6,11 @@ function pointAction(event){
 	//var secondParse = firstParse[1].split(")");
 	$("#popup").show();
 
-	$("#popup p").text("");
+	$("#popup").text("");
 
 	var name = event.target.name;
 
-	$("#popup p").text(name);
+	$("#popup").text(name);
 	
 
 	//alert(event.target.name);

@@ -66,7 +66,7 @@ function startSetup(){
 		var xAxis = [];
 		var yAxis = [];
 
-		yAxis.push(new axisPoint("Ecstatic", "love"));
+		yAxis.push(new axisPoint("Loving", "love"));
 		yAxis.push(new axisPoint("Happy", "joy"));
 		yAxis.push(new axisPoint("Surprised", "surprise"));
 		yAxis.push(new axisPoint("Anxious", "fear"));
@@ -104,7 +104,7 @@ function startSetup(){
 		for (var i = 0; i < data.length; i++) {
 			var unixTime = moment(data[i][4]);
 			var date = getTime(unixTime);
-			var pointName = ""+data[i][2]+"\n"+data[i][3]+"";
+			var pointName = ""+data[i][2]+"-\n"+data[i][3]+" - Intensity: "+data[i][1]+"";
 
 			pointToAddToGraph = new point(date,data[i][0],"images/"+data[i][5]+".png", getImageScale(data[i][1]), pointName);
 			//alert("point moment:"+date);

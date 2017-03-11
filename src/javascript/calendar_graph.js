@@ -67,7 +67,7 @@ function startSetup(){
 		var xAxis = [];
 		var yAxis = [];
 
-		yAxis.push(new axisPoint("Ecstatic", "love"));
+		yAxis.push(new axisPoint("Loving", "love"));
 		yAxis.push(new axisPoint("Happy", "joy"));
 		yAxis.push(new axisPoint("Surprised", "surprise"));
 		yAxis.push(new axisPoint("Anxious", "fear"));

@@ -97,7 +97,7 @@ function startSetup(){
 
 
 		//set up viewport
-		vp = new viewport(0,amountOfDaysToDisplay-1,0,5);
+		vp = new viewport(0,amountOfDaysToDisplay-1,0,6);
 
 		var graphX = new graph();
 

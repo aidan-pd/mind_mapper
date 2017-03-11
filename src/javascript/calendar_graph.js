@@ -105,7 +105,7 @@ function startSetup(){
 		for (var i = 0; i < data.length; i++) {
 			var unixTime = moment(data[i][4]);
 			var date = getDate(unixTime);
-			var pointName = ""+data[i][2]+"-\n"+data[i][3]+" - Intensity: "+data[i][1]+"";
+			var pointName = ""+data[i][2]+"-</br>"+data[i][3]+" - Intensity: "+data[i][1]+"";
 			pointToAddToGraph = new point(date,data[i][0],"images/"+data[i][5]+".png", getImageScale(data[i][1]), pointName);
 			//alert("point moment:"+date);
 

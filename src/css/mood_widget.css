@@ -35,7 +35,7 @@
 .grid_square{
 	background-image: url("../images/grid_button.png");
 	background-size: 0.5cm 0.5cm;
-	background-position: center;
+	background-position: poo;
 	background-repeat: no-repeat;
 	width: 16%;
 	margin: 0px;

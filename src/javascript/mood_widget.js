@@ -38,7 +38,7 @@ function set_grid_background(){
 	width = parseFloat(width)*5;
 
 	var height = $(".grid_square").css("height");
-	height = parseFloat(height)*6;
+	height = parseFloat(height)*7;
 
 	var y_offset = $("#love_1").position();
 	y_offset = parseFloat(y_offset.left);

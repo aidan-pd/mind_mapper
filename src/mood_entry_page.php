@@ -182,7 +182,8 @@ else{
 			</td>								
 		</tr>						
 	</table>
-	<p>I am apathetic/bored</p>
+	<p id="orLabel">Or</p>
+	<p id="apathy">I am apathetic/bored</p>
 </div>
 
 

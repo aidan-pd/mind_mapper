@@ -14,6 +14,11 @@ $(window).bind("load", function() {
     $(document).on('click', '.grid_square', function() { 
         select_mood(this);
     });
+
+    $(document).on('click', '#apathy', function() { 
+        select_mood(this);
+    });
+
 });
 
 $(document).ready(function(){

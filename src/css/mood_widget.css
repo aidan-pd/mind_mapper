@@ -86,7 +86,7 @@
 
 }
 
-#apathy{
+#apathy_1{
 	margin: 5px;
 	padding: 5px;
 	border-radius: 5px;
@@ -94,4 +94,17 @@
 	font-family: 'Roboto', sans-serif;
 	font-size: 18px;
 	background-color: #F5F5DC;
+}
+
+.apathyOnClick{
+	margin: 5px;
+	padding: 5px;
+	border-radius: 5px;
+	text-align: center;
+	font-family: 'Roboto', sans-serif;
+	font-size: 18px;
+	background-color: #F5F5DC;
+	border-style: solid;
+	border-color: black;
+	border-width: 2px;	
 }

@@ -73,7 +73,7 @@ function startSetup(){
 		yAxis.push(new axisPoint("Anxious", "fear"));
 		yAxis.push(new axisPoint("Sad", "sadness"));
 		yAxis.push(new axisPoint("Angry", "anger"));
-		yAxis.push(new axisPoint("", "apathy"));
+		yAxis.push(new axisPoint("...", "apathy"));
 
 
 

@@ -112,7 +112,7 @@ else{
 		</tr>
 		<tr id="bored_row">
 			<td class="row_title">
-				<p>Surprised</p>
+				<p>Bored</p>
 			</td>
 			<td class="grid_square" id="bored_1">
 			</td>

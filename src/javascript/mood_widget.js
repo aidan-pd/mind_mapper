@@ -15,7 +15,7 @@ $(window).bind("load", function() {
         select_mood(this);
     });
 
-    $(document).on('click', '#apathy', function() { 
+    $(document).on('click', '#apathy_1', function() { 
         select_mood(this);
     });
 

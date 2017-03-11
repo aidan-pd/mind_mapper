@@ -81,9 +81,15 @@
 
 #orLabel{
 	text-align: center;
+	font-size: 20px;
+	font-weight: bold;
+
 }
 
 #apathy{
+	margin: 5px;
+	padding: 5px;
+	border-radius: 5px;
 	text-align: center;
 	font-family: 'Roboto', sans-serif;
 	font-size: 18px;

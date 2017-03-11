@@ -110,6 +110,21 @@ else{
 			<td class="grid_square" id="surprise_5">
 			</td>												
 		</tr>
+		<tr id="bored_row">
+			<td class="row_title">
+				<p>Surprised</p>
+			</td>
+			<td class="grid_square" id="bored_1">
+			</td>
+			<td class="grid_square" id="bored_2">
+			</td>
+			<td class="grid_square" id="bored_3">
+			</td>
+			<td class="grid_square" id="bored_4">
+			</td>
+			<td class="grid_square" id="bored_5">
+			</td>												
+		</tr>
 		<tr id="fear_row">
 			<td class="row_title">
 				<p>Anxious</p>

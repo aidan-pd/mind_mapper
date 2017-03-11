@@ -72,6 +72,7 @@ function startSetup(){
 		yAxis.push(new axisPoint("Anxious", "fear"));
 		yAxis.push(new axisPoint("Sad", "sadness"));
 		yAxis.push(new axisPoint("Angry", "anger"));
+		yAxis.push(new axisPoint("...", "apathy"));
 
 
 
@@ -95,7 +96,7 @@ function startSetup(){
 
 
 		//set up viewport
-		vp = new viewport(0,amountOfHoursToDisplay-1,0,5);
+		vp = new viewport(0,amountOfHoursToDisplay-1,0,6);
 
 		var graphX = new graph();
 

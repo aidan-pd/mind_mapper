@@ -64,5 +64,18 @@ function select_mood(mood){
     selected_mood = selected_mood_string_split.pop();
 
     $(".grid_square").css({"background-image":"url(images/grid_button.png)"});
-    $("#"+selected_mood_string).css({"background-image":"url(images/grid_button_full.png)"});
+	$("#apathy_1").css({"border-style":"none"});
+
+
+
+    if(selected_mood_string.includes("apathy")){
+    	$("#"+selected_mood_string).css({"border-style":"solid"});
+    	$("#"+selected_mood_string).css({"border-color":"black"});
+    	$("#"+selected_mood_string).css({"border-width":"2px"});
+    }
+    else{
+    	$("#"+selected_mood_string).css({"background-image":"url(images/grid_button_full.png)"});
+
+    }
+
 }

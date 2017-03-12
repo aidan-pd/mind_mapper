@@ -19,6 +19,10 @@ body{
 	border-top-color: #007AFF;
 	height: 8%;
 	width: 100%;
+
+		-webkit-animation: scale-down-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite both;
+	-moz-animation: scale-down-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite both;
+	animation: scale-down-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite both;
 }
 
 #graphControls img{
@@ -41,9 +45,7 @@ p{
 
 #popup{
 
-	-webkit-animation: scale-down-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite both;
-	-moz-animation: scale-down-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite both;
-	animation: scale-down-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite both;
+
 
 	text-align: center;
 	font-family: 'Roboto', sans-serif;

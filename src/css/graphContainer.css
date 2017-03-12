@@ -5,6 +5,9 @@ height: 90%;
 width: 100%;
 -webkit-tap-highlight-color: rgba(0,0,0,0);
 
+	-webkit-animation: scale-down-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	-moz-animation: scale-down-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	animation: scale-down-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
 body{

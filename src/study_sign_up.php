@@ -72,6 +72,9 @@ else{
 		 </ol>
 
 		 <p class="button" onclick="signupToStudy()">Sign Up</p>
+
+		 <a class="button" href="dashboard.php">I don't want to participate</a>
+
 	</body>
 
 </html>

@@ -37,7 +37,7 @@ if (mysqli_query($conn, $sql)) {
 	$_SESSION["logged_in"] = "TRUE";
 	$_SESSION["username"] = $username;
 
-	header( "Location: ../welcome_page.php" );	
+	header( "Location: ../study_sign_up.php" );	
 
 
 } else {

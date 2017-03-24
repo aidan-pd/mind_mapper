@@ -34,7 +34,7 @@
 
 
 		 <p id="subText">Welcome to QSMoodLogger, a mobile web application that allows you to log and track your moods, emotions and activities. </p>
-		 <img src="images/screenshot.png"></img>
+		 <img src="images/screenshot.png" width="100%"></img>
 		 <p id="subText"> QSMoodLogger will present your emotions back to you with beautiful graphs that you're free to explore. Log in or sign up below to begin! </p>
 
 

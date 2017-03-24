@@ -61,7 +61,8 @@ $dbname = "mbax4ad8";
 				}
 				//user is not logged in or not a recognised user
 				else{
-					echo "<p>User Not Recognised. Please contact Aidan.</p>";
+					echo '<link rel="stylesheet" type="text/css" href="../css/welcome_page.css">';
+					echo "<p id='titleText'>User Not Recognised. Please go back and create an account if you don't have one.</p>";
 				}
 
 

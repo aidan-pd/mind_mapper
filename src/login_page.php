@@ -49,8 +49,8 @@
 		</form>
 	</br>
 		<a class="button" href="new_account.html">I haven't got an account...</a>
-		<p> </p>
-		<p> </p>
+		<p> </p></br>
+		<p> </p></br>
 	</body>
 
 </html>

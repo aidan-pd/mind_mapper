@@ -25,6 +25,14 @@
 	font-weight: bolder;
 }
 
+#subTextBold{
+	font-family: 'Roboto', sans-serif;
+	font-size: 24px;
+	color: red;
+	font-weight: 800;
+}
+
+
 #paraText{
 	font-family: 'Roboto', sans-serif;
 	font-size: 14px;

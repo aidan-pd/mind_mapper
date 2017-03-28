@@ -48,7 +48,7 @@ mysqli_close($conn);
 	$client = new ZenSend\Client("Yoxg_bwVBPDyKRemsTjMbw");
 
 	$request = new ZenSend\SmsRequest();
-	$request->body = "Thank you for signing up to the QS MoodLogger user study! Data collection will start tomorrow and continue for the following two weeks, feel free to use the app however you like in that time. https://goo.gl/rrpLlz";
+	$request->body = "Thank you for signing up to the QS MoodLogger user study! Data collection will start tomorrow and continue for the following two weeks, feel free to use the app however you like in that time. Consider saving it as a favourite for easy access! https://goo.gl/rrpLlz";
 	$request->originator = "QS Mood Log";
 	//$request->numbers = ["447958015883", "447581277407"];
 	$request->numbers = $phone_numbers;
